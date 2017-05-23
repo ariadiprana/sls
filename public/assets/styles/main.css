@@ -9070,7 +9070,7 @@ li[aria-disabled="true"] {
   overflow: hidden;
 }
 .who_mini--gallery_item img {
-  max-width: 100%;
+  max-width: 5%;
   vertical-align: top;
 }
 .who_mini--text {
@@ -9111,7 +9111,9 @@ li[aria-disabled="true"] {
   }
   .who_mini--gallery_item img {
     width: 100%;
+    max-width: 10%;
   }
+
   .who_mini--text {
     padding: 34px 0 0;
     font-size: 15px;
@@ -11499,6 +11501,14 @@ li[aria-disabled="true"] {
   font-size: 28px;
   text-transform: uppercase;
 }
+
+.txt-kecil {
+  font-size: 10px;
+  color: #969696;
+  padding: 17px 0 20px;
+  position: relative;
+}
+
 .services_info--item_text {
   font-size: 16px;
   line-height: 26px;
