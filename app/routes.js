@@ -17,27 +17,62 @@ module.exports = function(app, passport) {
 	app.get('/services', function(req, res) { res.render('services.ejs'); });
 
 	// SALES
-	app.get('/finansial/kredit-jaminan-bpkb', function(req, res) { res.render('finansial-kredit-jaminan-bpkb.ejs'); });
-	app.get('/finansial/kredit-jaminan-sertifikat', function(req, res) { res.render('finansial-kredit-jaminan-sertifikat.ejs'); });
+	app.get('/finansial/kredit-tanpa-agunan', function(req, res) { res.render('finansial-kredit-tanpa-agunan.ejs'); });
+	app.get('/finansial/kredit-pemilikan-rumah', function(req, res) { res.render('finansial-kredit-pemilikan-rumah.ejs'); });
+	app.get('/finansial/kredit-agunan-bpkb', function(req, res) { res.render('finansial-kredit-agunan-bpkb.ejs'); });
+	app.get('/finansial/kredit-agunan-sertifikat', function(req, res) { res.render('finansial-kredit-agunan-sertifikat.ejs'); });
 	
-	app.get('/asuransi/kendaraan', function(req, res) { res.render('asuransi-kendaraan.ejs'); });
-	app.get('/asuransi/properti', function(req, res) { res.render('asuransi-properti.ejs'); });
-	app.get('/asuransi/perjalanan', function(req, res) { res.render('asuransi-perjalanan.ejs'); });
+	app.get('/asuransi/mobil', function(req, res) { res.render('asuransi-mobil.ejs'); });
+	app.get('/asuransi/motor', function(req, res) { res.render('asuransi-motor.ejs'); });
+	app.get('/asuransi/sepeda', function(req, res) { res.render('asuransi-sepeda.ejs'); });
+	app.get('/asuransi/rumah-apartment', function(req, res) { res.render('asuransi-rumah-apartment.ejs'); });
+	app.get('/asuransi/ruko-rukan', function(req, res) { res.render('asuransi-ruko-rukan.ejs'); });
+	app.get('/asuransi/tempat-usaha', function(req, res) { res.render('asuransi-tempat-usaha.ejs'); });
+	app.get('/asuransi/industri', function(req, res) { res.render('asuransi-industri.ejs'); });
+	app.get('/asuransi/kesehatan', function(req, res) { res.render('asuransi-kesehatan.ejs'); });
+	app.get('/asuransi/personal-accident', function(req, res) { res.render('asuransi-personal-accident.ejs'); });
+	app.get('/asuransi/travel', function(req, res) { res.render('asuransi-travel.ejs'); });
+	app.get('/asuransi/surety-bond', function(req, res) { res.render('asuransi-surety-bond.ejs'); });
+	app.get('/asuransi/prefessional-indemnity', function(req, res) { res.render('asuransi-prefessional-indemnity.ejs'); });
+	app.get('/asuransi/marine-cargo', function(req, res) { res.render('asuransi-marine-cargo.ejs'); });
+	app.get('/asuransi/term-life', function(req, res) { res.render('asuransi-term-life.ejs'); });
+	app.get('/asuransi/unit-link', function(req, res) { res.render('asuransi-unit-link.ejs'); });
+	app.get('/asuransi/dana-pensiun', function(req, res) { res.render('dana-pensiun.ejs'); });
+	 
 	
-	app.get('/kartu-kredit/cash-back', function(req, res) { res.render('kartu-kredit-cash-back.ejs'); });
-	app.get('/kartu-kredit/travelling', function(req, res) { res.render('kartu-kredit-travelling.ejs'); });
-	app.get('/kartu-kredit/promosi', function(req, res) { res.render('kartu-kredit-promosi.ejs'); });
+	app.get('/kartu-kredit/promo', function(req, res) { res.render('kartu-kredit-promo.ejs'); });
 	app.get('/kartu-kredit/reward', function(req, res) { res.render('kartu-kredit-reward.ejs'); });
+	app.get('/kartu-kredit/cashback', function(req, res) { res.render('kartu-kredit-cashback.ejs'); });
+	app.get('/kartu-kredit/miles', function(req, res) { res.render('kartu-kredit-miles.ejs'); });
 	app.get('/kartu-kredit/shopping', function(req, res) { res.render('kartu-kredit-shopping.ejs'); });
+	app.get('/kartu-kredit/travel', function(req, res) { res.render('kartu-kredit-travel.ejs'); });
+	app.get('/kartu-kredit/lifestyle', function(req, res) { res.render('kartu-kredit-lifestyle.ejs'); });
+	app.get('/kartu-kredit/charge-card', function(req, res) { res.render('kartu-kredit-charge-card.ejs'); });
+	app.get('/kartu-kredit/syariah', function(req, res) { res.render('kartu-kredit-syariah.ejs'); });
+
+
+	// BANKING - AND - FINANCE
+	app.get('/banking-and-finance', function(req, res) { res.render('banking-and-finance.ejs'); });
+
+	// INSURANCE
+	app.get('/insurance', function(req, res) { res.render('insurance.ejs'); });
 
 	// TRAINING
+	app.get('/training/learning-and-development', function(req, res) { res.render('learning-and-development.ejs'); });
 	app.get('/training/professional-selling-skill', function(req, res) { res.render('training-professional-selling-skill.ejs'); });
 	app.get('/training/sales-leadership', function(req, res) { res.render('training-sales-leadership.ejs'); });
 	app.get('/training/customer-relationship-management', function(req, res) { res.render('training-customer-relationship-management.ejs'); });
 	app.get('/training/collection-skill', function(req, res) { res.render('training-collection-skill.ejs'); });
 	app.get('/training/managing-for-growth', function(req, res) { res.render('training-managing-for-growth.ejs'); });
 	app.get('/training/professional-development-and-team-building', function(req, res) { res.render('training-professional-development-and-team-building.ejs'); });
-	app.get('/training/learning-and-development', function(req, res) { res.render('learning-and-development.ejs'); });
+	
+	// SALES SUPPORT
+	app.get('/sales-support/online-offline', function(req, res) { res.render('sales-support-online-offline.ejs'); });
+	app.get('/sales-support/multi-product', function(req, res) { res.render('sales-support-multi-product.ejs'); });
+	app.get('/sales-support/sales-analytic', function(req, res) { res.render('sales-support-sales-analytic.ejs'); });
+	app.get('/sales-support/sales-empowering', function(req, res) { res.render('sales-support-sales-empowering.ejs'); });
+	// Initial
+	//app.get('', function(req, res) { res.render('.ejs'); });
 	
 }
 
