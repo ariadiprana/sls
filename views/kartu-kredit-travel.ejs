@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Salesku</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="/assets/images/content/favicon.ico" type="image/x-icon">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,300italic,400italic,600italic" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="/assets/styles/main.css">
+</head>
+
+<body>
+	<div id="main">
+		<div class="layout">
+			<div class="layout--header">
+				<header class="header">
+					<div class="container">
+						<div class="header--inner">
+							<div class="row">
+								<div class="col-lg-2 col-md-12">
+									<div class="header--logo logo">
+										<a href="/"><img src="/assets/images/design/logo-header.png" alt="" /></a>
+									</div>
+								</div>
+								<div class="col-lg-10 col-md-12 visible-md-block visible-lg-block">
+									<div class="header--right">
+										<div class="header_contacts">
+											<div class="header_contacts--item">
+												<div class="contact_mini">
+													<i class="contact_mini--icon icons8-phone color_orange"></i>
+													<strong>0822-9737-6700</strong>
+													<span>Monday-Friday, 9am - 5pm</span>
+												</div>
+											</div>
+											<div class="header_contacts--item">
+												<div class="contact_mini">
+													<i class="contact_mini--icon icons8-message color_orange"></i>
+													<strong>info@salesku.id</strong>
+													<span>Drop us a line anytime!</span>
+												</div>
+											</div>
+											<div class="header_contacts--item">
+												<div class="contact_mini">
+													<i class="contact_mini--icon icons8-geo-fence color_orange"></i>
+													<strong>vOffice Level 12-1N</strong>
+													<span>Jl. MH Thamrin No.81,Jakarta Pusat</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<nav class="header_nav -wide visible-md-block visible-lg-block">
+						<div class="header_nav--inner">
+							<%- include ./menu.ejs %>
+						</div>
+					</nav>
+					<div class="header--menu_opener visible-xs-block visible-sm-block">
+						<span class="c-hamburger c-hamburger--htx">
+							<span>toggle menu</span>
+						</span>
+					</div>
+				</header>
+				<header class="header header_sticky">
+					<div class="container">
+						<div class="header--inner">
+							<div class="row">
+								<div class="col-lg-2 col-md-12">
+									<div class="header--logo logo">
+										<a href="#"><img src="/assets/images/design/logo-header.png" alt="" /></a>
+									</div>
+								</div>
+								<div class="col-lg-10 col-md-12 visible-md-block visible-lg-block">
+									<div class="header--right">
+										<div class="header_contacts">
+											<div class="header_contacts--item">
+												<div class="contact_mini">
+													<i class="contact_mini--icon icons8-phone color_orange"></i>
+													<strong>0822-9737-6700</strong>
+													<span>Monday-Friday, 9am - 5pm</span>
+												</div>
+											</div>
+											<div class="header_contacts--item">
+												<div class="contact_mini">
+													<i class="contact_mini--icon icons8-message color_orange"></i>
+													<strong>info@salesku.id</strong>
+													<span>Drop us a line anytime!</span>
+												</div>
+											</div>
+											<div class="header_contacts--item">
+												<div class="contact_mini">
+													<i class="contact_mini--icon icons8-geo-fence color_orange"></i>
+													<strong>vOffice Level 12-1N</strong>
+													<span>Jl. MH Thamrin No.81,Jakarta Pusat</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<nav class="header_nav -wide visible-md-block visible-lg-block">
+						<div class="header_nav--inner">
+							<%- include ./menu.ejs %>
+						</div>
+					</nav>
+					<div class="header--menu_opener visible-xs-block visible-sm-block">
+						<span class="c-hamburger c-hamburger--htx">
+							<span>toggle menu</span>
+						</span>
+					</div>
+				</header>
+			</div>
+			<div class="layout--container">
+				<div class="page_header">
+					<div class="container">
+						<h1 class="page_header--title">Kartu Kredit Travel</h1>
+					</div>
+				</div>
+				<nav class="breadcrumbs">
+					<div class="container">
+						<ul class="breadcrumbs--list">
+							<li class="breadcrumbs--item"><a href="/" class="breadcrumbs--link">Home</a></li>
+							<li class="breadcrumbs--item"><a href="/kartu-kredit/travel" class="breadcrumbs--link -active">Kartu Kredit Travel</a></li>
+						</ul>
+					</div>
+				</nav>
+
+				<div class="section">
+					<div class="container">
+						<div class="section--header">
+							<h2 class="section--title">Hubungi Kami!</h2>
+							<br>
+							<center>
+								<a class="social-media" href="https://www.facebook.com/salesku.salesku.9"><i class="fa fa-facebook"></i></a>
+								<a class="social-media" href="https://twitter.com/salesku_id"><i class="fa fa-twitter"></i></a>
+							</center>
+							<p class="section--description">
+								salesku akan membantu anda menemukan kartu kredit sesuai dengn kebutuhan dan preferensi anda
+								<br>Silahkan mengisi form dibawah ini
+							</p>
+						</div>
+						<div class="section--container">
+							<div class="contact_us tabby">
+								<div data-tabs-content class="contact_us--list">
+									<div id="tab-usa" data-tabs-pane class="contact_us--item tabby--pane -active">
+										<div class="row">
+											<div class="col-md-12 col-md-offset-0 col-xs-12">
+												<div class="contact_us--form">
+													<form action="#" class="contact_form send-form" enctype="multipart/form-data" method="post">
+														<%- include ./form-kartu-kredit.ejs %>
+														<div class="msg">Thank you. We resive your message.</div>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="layout--footer">
+				<footer class="footer">
+					<div class="footer--bg"></div>
+					<div class="footer--inner">
+						<div class="container">
+							<section class="footer_copyrights">
+								<div class="footer_copyrights--container">
+									<div class="row">
+										<div class="col-sm-6 col-xs-12">
+											<div class="footer_copyrights--item">
+												<div class="footer_copyrights--logo">
+													<a href="#"><img src="/assets/images/design/logo-footer.png" alt="" /></a>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-6 col-xs-12">
+											<div class="footer_copyrights--item">
+												<p class="footer_copyrights--item_copyrights">PT. Salesku Abiwara Indonesia</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+						</div>
+					</div>
+				</footer>
+			</div>
+		</div>
+	</div>
+	<div id="mobile_sidebar" class="mobile_sidebar">
+		<div class="mobile_sidebar--closer -white">
+			<button class="c-hamburger c-hamburger--htx is-active"><span>toggle menu</span></button>
+		</div>
+		<div class="mobile_menu">
+			<ul class="menu">
+				<li class="menu-item"><a href="/">Home</a></li>
+				<li class="menu-item"><a href="/about_us">About</a></li>
+				<li class="menu-item"><a href="/services">Services</a></li>
+				<li class="menu-item"><a href="/contact">Contact</a></li>
+			</ul>
+		</div>
+		<!-- topbar_contacts-->
+		<ul class="topbar_contacts -mobile_sidebar">
+			<li class="topbar_contacts--item"><span class="contact_phone"><i class="icons8-phone"></i>0822-9737-6700</span></li>
+			<li class="topbar_contacts--item"><span class="contact_email"><i class="icons8-message"></i><a href="#">info@salesku.id</a></span></li>
+			<li class="topbar_contacts--item"><span class="contact_phone"><i class="icons8-business"></i><a href="#">vOffice Level 12-1N</a></span></li>
+		</ul>
+		<!-- /topbar_contacts-->
+		<!-- follow us-->
+		<div class="follow_us -mobile_sidebar">
+			<strong>Follow us</strong>
+			<ul>
+				<li><a href="https://www.facebook.com/salesku.salesku.9"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="https://twitter.com/salesku_id"><i class="fa fa-twitter"></i></a></li>
+			</ul>
+		</div>
+		<!-- /follow us-->
+	</div>
+	<script src="/assets/libs/jquery/dist/jquery.min.js"></script>
+	<script src="/assets/libs/Headhesive.js/dist/headhesive.min.js"></script>
+	<script src="/assets/libs/slideout.js/dist/slideout.min.js"></script>
+	<link rel="stylesheet" href="/assets/libs/magnific-popup/dist/magnific-popup.css">
+	<script src="/assets/libs/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+	<script src="/assets/libs/youtubeBackground.min/build/jquery.youtubebackground.min.js"></script>
+	<script src="/assets/libs/vide/dist/jquery.vide.min.js"></script>
+	<script src="/assets/libs/social-sharing-buttons/social-buttons.js"></script>
+	<link rel="stylesheet" href="/assets/libs/social-sharing-buttons/social-buttons.css">
+	<script src="/assets/libs/mixitup/build/jquery.mixitup.min.js"></script>
+	<script src="/assets/libs/isMobile/isMobile.min.js"></script>
+	<script src="/assets/libs/isInViewport/lib/isInViewport.min.js"></script>
+	<script src="/assets/libs/progressbar.js/dist/progressbar.min.js"></script>
+	<script src="/assets/libs/select2/dist/js/select2.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+	<script src="/assets/libs/tabby/dist/js/tabby.min.js"></script>
+	<script src="/assets/libs/blueimp-file-upload/js/vendor/jquery.ui.widget.js"></script>
+	<script src="/assets/libs/blueimp-file-upload/js/jquery.iframe-transport.js"></script>
+	<script src="/assets/libs/blueimp-file-upload/js/jquery.fileupload.js"></script>
+	<script src="/assets/libs/slick-carousel/slick/slick.min.js"></script>
+	<link rel="stylesheet" href="/assets/libs/slick-carousel/slick/slick.css">
+	<script src="/assets/scripts/main.js"></script>
+</body>
+
+</html>
