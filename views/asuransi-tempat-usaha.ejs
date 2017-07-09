@@ -151,8 +151,9 @@
 										<div class="row">
 											<div class="col-md-12 col-md-offset-0 col-xs-12">
 												<div class="contact_us--form">
-													<form action="#" class="contact_form send-form" enctype="multipart/form-data" method="post">
+													<form action="/email-asuransi"  method="post">
 														<%- include ./form-asuransi.ejs %>
+														<input type="hidden" name="fields[namaForm]" value="Asuransi Tempat Usaha"/>
 														<div class="msg">Thank you. We resive your message.</div>
 													</form>
 												</div>
