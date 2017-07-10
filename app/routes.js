@@ -60,7 +60,7 @@ module.exports = function(app, passport) {
 			 Jabatan          : ${jabatan} \n
 			 Email Kantor     : ${emailKantor} \n
 			 Telpon Kantor    : ${telKantor} \n
-			 Alamat Kantor    : ${alamatKantor} 
+			 Alamat Kantor    : ${alamatKantor}
 			 `
 		}
 		console.log(mailOptions);
