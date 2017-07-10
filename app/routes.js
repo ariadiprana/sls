@@ -70,7 +70,7 @@ module.exports = function(app, passport) {
 				res.end("error");
 			}else{
 				console.log("Message sent: " + response.message);
-				res.end("sent");
+				res.render('sent.ejs');
 			}
 		});
 	})
@@ -113,7 +113,7 @@ module.exports = function(app, passport) {
 				res.end("error");
 			}else{
 				console.log("Message sent: " + response.message);
-				res.end("sent");
+				res.render('sent.ejs');
 			}
 		});
 	})
@@ -156,7 +156,7 @@ module.exports = function(app, passport) {
 				res.end("error");
 			}else{
 				console.log("Message sent: " + response.message);
-				res.end("sent");
+				res.render('sent.ejs');
 			}
 		});
 	})
@@ -199,7 +199,7 @@ module.exports = function(app, passport) {
 				res.end("error");
 			}else{
 				console.log("Message sent: " + response.message);
-				res.end("sent");
+				res.render('sent.ejs');
 			}
 		});
 	})
