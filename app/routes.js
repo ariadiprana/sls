@@ -23,6 +23,65 @@ module.exports = function(app, passport) {
 	// home screen
 	// =====================================
 
+	
+
+	app.post('/email-learning', function(req, res) {
+		console.log(req.body)
+		var namaForm = req.body.fields.namaForm
+		var perusahaan = req.body.fields.perusahaan
+		var namaPerusahaan = req.body.fields.namaPerusahaan
+		var bidangIndustri = req.body.fields.bidangIndustri
+		var emailPerusahaan = req.body.fields.emailPerusahaan
+		var alamatPerusahaan = req.body.fields.alamatPerusahaan
+		var noTelpPerusahaan = req.body.fields.noTelpPerusahaan
+
+		var namaLengkap = req.body.fields.namaLengkap
+		var bidangPekerjaan = req.body.fields.bidangPekerjaan
+		var nomorHp = req.body.fields.nomorHp
+		var email = req.body.fields.email
+		var message = req.body.fields.message
+
+		var subjectTitle = 'Informasi Pengunjung Salesku - '+namaForm
+
+		if(perusahaan = 'perusahaan'){
+			var mailOptions={
+			   to : 'ari.adiprana@gmail.com',
+			   subject : subjectTitle,
+			   text : `Berikut informasi pengunjung salesku untuk ${namaForm}\n
+				 Perusahaan/Pribadi : ${perusahaan} \n
+				 Nama Perusahaan    : ${namaPerusahaan} \n
+				 Bidang Industri    : ${bidangIndustri} \n
+				 Email Perusahaan   : ${emailPerusahaan} \n
+				 Alamat Perusahaan  : ${alamatPerusahaan} \n
+				 No Telp Perusahaan : ${noTelpPerusahaan} \n
+				 Pesan              : ${message}`
+			}
+		}
+		else if(perusahaan == 'pribadi'){
+			var mailOptions={
+			   to : 'ari.adiprana@gmail.com',
+			   subject : subjectTitle,
+			   text : `Berikut informasi pengunjung salesku untuk ${namaForm}\n
+				 Perusahaan/Pribadi : ${perusahaan} \n
+				 Nama Lengkap        : ${namaLengkap} \n
+				 Bidang Pekerjaan   : ${bidangPekerjaan} \n
+				 Nomor HP   	    : ${nomorHp} \n
+				 Email              : ${email} \n
+				 Pesan              : ${message}`
+			}
+		}
+		console.log(mailOptions);
+		smtpTransport.sendMail(mailOptions, function(error, response){
+			if(error){
+				console.log(error);
+				res.end("error");
+			}else{
+				console.log("Message sent: " + response.message);
+				res.render('sent.ejs');
+			}
+		});
+	})
+
 	app.post('/email-sales-support', function(req, res) {
 		console.log(req.body)
 		var namaForm = req.body.fields.namaForm
