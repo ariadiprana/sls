@@ -262,75 +262,9 @@
 										<div class="row">
 											<div class="col-md-12 col-md-offset-0 col-xs-12">
 												<div class="contact_us--form">
-													<form action="#" class="contact_form send-form" enctype="multipart/form-data" method="post">
-														<fieldset>
-															<div class="row">
-																<div class="col-md-6 col-xs-12">
-																	<label class="field -wide">
-																		<h3 class="contact_us--form_title">Perusahaan / Individu</h3>
-																		 <select name="fields[car]" class="selectstyle" required="">
-																		  <option value="perusahaan">Perusahaan</option>
-																		  <option value="pribadi">Pribadi</option>
-																		</select>
-																	</label>
-																</div>
-															</div>
-															<div class="row">
-																<div class="col-md-6 col-xs-12">
-																	<h3 class="contact_us--form_title">Nama Perusahaan</h3>
-																	<label class="field -wide">
-																		<input type="text" placeholder="Nama Perusahaan" name="fields[namaPerusahaan]" required="">
-																	</label>
-																</div>
-																<div class="col-md-6 col-xs-12">
-																	<h3 class="contact_us--form_title">Bidang Industri</h3>
-																	<label class="field -wide">
-																		<input type="text" placeholder="Bidang Industri" name="fields[bidangIndustri]" required="">
-																	</label>
-																</div>
-															</div>
-															<div class="row">
-																<div class="col-md-6 col-xs-12">
-																	<h3 class="contact_us--form_title">Email</h3>
-																	<label class="field -wide">
-																		<input type="text" placeholder="Email" name="fields[emailPerusahaan]" required="">
-																	</label>
-																</div>
-																<div class="col-md-6 col-xs-12">
-																	<h3 class="contact_us--form_title">Alamat</h3>
-																	<label class="field -wide">
-																		<input type="text" placeholder="Alamat" name="fields[alamatPerusahaan]">
-																	</label>
-																</div>
-															</div>
-															<div class="row">
-																<div class="col-md-6 col-xs-12">
-																	<h3 class="contact_us--form_title">No. Telpon</h3>
-																	<label class="field -wide">
-																		<input type="text" placeholder="No. Telpon" name="fields[noTelpPerusahaan]" required="">
-																	</label>
-																</div>
-																<div class="col-md-6 col-xs-12">
-																</div>
-															</div>
-															<div class="row">
-																<div class="col-md-12 col-xs-12">
-																<h3 class="contact_us--form_title">Pesan</h3>
-																	<label class="field -wide">
-																		<textarea cols="30" rows="5" placeholder="Pesan" name="fields[message]" required=""></textarea>
-																	</label>
-																</div>
-															</div>
-															<div class="row">
-																<div class="col-md-9 col-xs-12">
-																</div>
-																<div class="col-md-3 col-xs-12">
-																	<div class="contact_form--submit">
-																		<button class="button -menu_size -waikawa_gray -bordered" type="submit"><span class="button--inner">Kirim</span></button>
-																	</div>
-																</div>
-															</div>
-														</fieldset>
+													<form action="/email-learning" method="post">
+														<%- include ./form-learning.ejs %>
+														<input type="hidden" name="fields[namaForm]" value="Training Managing for Growth"/>
 														<div class="msg">Thank you. We resive your message.</div>
 													</form>
 												</div>
