@@ -45,7 +45,7 @@ module.exports = function(app, passport) {
 
 		if(perusahaan = 'perusahaan'){
 			var mailOptions={
-			   to : 'ari.adiprana@gmail.com',
+			   to : 'info@salesku.id',
 			   subject : subjectTitle,
 			   text : `Berikut informasi pengunjung salesku untuk ${namaForm}\n
 				 Perusahaan/Pribadi : ${perusahaan} \n
@@ -59,7 +59,7 @@ module.exports = function(app, passport) {
 		}
 		else if(perusahaan == 'pribadi'){
 			var mailOptions={
-			   to : 'ari.adiprana@gmail.com',
+			   to : 'info@salesku.id',
 			   subject : subjectTitle,
 			   text : `Berikut informasi pengunjung salesku untuk ${namaForm}\n
 				 Perusahaan/Pribadi : ${perusahaan} \n
@@ -103,7 +103,7 @@ module.exports = function(app, passport) {
 		var subjectTitle = 'Informasi Pengunjung Salesku - '+namaForm
 
 		var mailOptions={
-		   to : 'ari.adiprana@gmail.com',
+		   to : 'info@salesku.id',
 		   subject : subjectTitle,
 		   text : `Berikut informasi pengunjung salesku untuk ${namaForm}\n
 			 Nama Depan  	    : ${namaDepan} \n
@@ -150,7 +150,7 @@ module.exports = function(app, passport) {
 		var subjectTitle = 'Informasi Pengunjung Salesku - '+namaForm
 
 		var mailOptions={
-		   to : 'ari.adiprana@gmail.com',
+		   to : 'info@salesku.id',
 		   subject : subjectTitle,
 		   text : `Berikut informasi pengunjung salesku untuk ${namaForm}\n
 			 Nama Depan  	    : ${namaDepan} \n
@@ -193,7 +193,7 @@ module.exports = function(app, passport) {
 		var subjectTitle = 'Informasi Pengunjung Salesku - '+namaForm
 
 		var mailOptions={
-		   to : 'ari.adiprana@gmail.com',
+		   to : 'info@salesku.id',
 		   subject : subjectTitle,
 		   text : `Berikut informasi pengunjung salesku untuk ${namaForm}\n
 			 Nama Depan  	    : ${namaDepan} \n
@@ -236,7 +236,7 @@ module.exports = function(app, passport) {
 		var subjectTitle = 'Informasi Pengunjung Salesku - '+namaForm
 
 		var mailOptions={
-		   to : 'ari.adiprana@gmail.com',
+		   to : 'info@salesku.id',
 		   subject : subjectTitle,
 		   text : `Berikut informasi pengunjung salesku untuk ${namaForm}\n
 			 Nama Depan  	    : ${namaDepan} \n
