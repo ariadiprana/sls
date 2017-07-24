@@ -7549,6 +7549,13 @@ li[aria-disabled="true"] {
   color: #ff7110;
   font-size: 38px;
 }
+.mega_nav--item_icon_mobile {
+  position: absolute;
+  left: 20px;
+  top: 3px;
+  color: #ff7110;
+  font-size: 38px;
+}
 .mega_nav--item_image {
   position: absolute;
   border-radius: 3px;
@@ -7894,6 +7901,19 @@ li[aria-disabled="true"] {
   position: relative;
 }
 .mobile_menu .menu .menu-item > a {
+  display: block;
+  color: #fff;
+  padding: 17px 65px;
+  position: relative;
+}
+.mobile_menu .menu .head-item {
+  font-size: 15px;
+  text-transform: uppercase;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  font-weight: 500;
+  position: relative;
+}
+.mobile_menu .menu .head-item > a {
   display: block;
   color: #fff;
   padding: 17px 20px;

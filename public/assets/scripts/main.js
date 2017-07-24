@@ -1,5 +1,65 @@
 'use strict';
 
+var isGroupBankingFinance = false;
+var isGroupInsurance = false;
+var isGroupTraining = false;
+var isGroupSalesSupport = false;
+function mulai(){
+	$(".group-banking-finance").hide();
+	$(".group-insurance").hide();
+	$(".group-training").hide();
+	$(".group-sales-support").hide();
+}
+
+mulai();
+
+$("#groupBankingFinance").click(function() {
+	mulai();
+	if(isGroupBankingFinance){
+		$(".group-banking-finance").hide();
+		isGroupBankingFinance = false;
+	}else{
+		$(".group-banking-finance").show();
+		isGroupBankingFinance = true;
+	}
+})
+
+$("#groupInsurance").click(function() {
+	mulai();
+	if(isGroupInsurance){
+		$(".group-insurance").hide();
+		isGroupInsurance = false;
+	}else{
+		$(".group-insurance").show();
+		isGroupInsurance = true;
+	}
+})
+
+$("#groupTraining").click(function() {
+	mulai();
+	if(isGroupTraining){
+		$(".group-training").hide();
+		isGroupTraining = false;
+	}else{
+		$(".group-training").show();
+		isGroupTraining = true;
+	}
+})
+
+$("#groupSales").click(function() {
+	mulai();
+	if(isGroupSalesSupport){
+		$(".group-sales-support").hide();
+		isGroupSalesSupport = false;
+	}else{
+		$(".group-sales-support").show();
+		isGroupSalesSupport = true;
+	}
+})
+
+
+
+
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -830,8 +890,8 @@ var Tip = function () {
 		}).done(function( data ) {
 			$this.find('.msg').show();
 		});
-		
-		e.preventDefault(); 
+
+		e.preventDefault();
 
 	});
 
